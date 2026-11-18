@@ -55,7 +55,7 @@ Halaman utama menjalankan `SELECT * FROM data_barang`, lalu menampilkan hasilnya
 <img src="screenshot/hasil2.png">  
 
 ### 9. Menambah Data / Create (`tambah.php`)
-Halaman berisi form (nama, kategori, harga jual, harga beli, stok, dan file gambar) dengan `method="post"` dan `enctype="multipart/form-data"` agar bisa mengunggah file. Saat tombol **Simpan** ditekan, PHP menyimpan gambar ke folder `gambar/`, menjalankan `INSERT INTO`, lalu mengarahkan kembali ke `index.php`. Pada pengujian ditambahkan barang **Laptop Gaming** (kategori Komputer, stok 21), dan barang tersebut muncul sebagai baris keempat di tabel.
+Halaman berisi form (nama, kategori, harga jual, harga beli, stok, dan file gambar) dengan `method="post"` dan `enctype="multipart/form-data"` agar bisa mengunggah file. Saat tombol **Simpan** ditekan, PHP menyimpan gambar ke folder `gambar/`, menjalankan `INSERT INTO`, lalu mengarahkan kembali ke `index.php`. Pada pengujian ditambahkan barang **Iphone 18 promax 2TB** (kategori Hand phone, stok 10), dan barang tersebut muncul sebagai baris keempat di tabel.
 
 <img src="screenshot/code3.png">  
 <img src="screenshot/code3lanjutan.png">  
@@ -65,7 +65,7 @@ Halaman berisi form (nama, kategori, harga jual, harga beli, stok, dan file gamb
 <img src="screenshot/hasil3lanjutan1.png">  
 
 ### 10. Mengubah Data / Update (`ubah.php`)
-Halaman ini mengambil `id` dari URL (`ubah.php?id=...`), mengambil datanya dengan `SELECT`, lalu mengisi form dengan nilai lama. Setelah disimpan, `UPDATE ... WHERE id_barang` dijalankan. Gambar hanya diganti bila pengguna memilih file baru. Pada pengujian, data **HP Samsung Android** diubah menjadi **HP Samsung G25 Android** dengan kategori Hand Phone.
+Halaman ini mengambil `id` dari URL (`ubah.php?id=...`), mengambil datanya dengan `SELECT`, lalu mengisi form dengan nilai lama. Setelah disimpan, `UPDATE ... WHERE id_barang` dijalankan. Gambar hanya diganti bila pengguna memilih file baru. Pada pengujian, data **HP Samsung Android** diubah menjadi **samsung s26 ultra** dengan kategori Hand Phone.
 
 <img src="screenshot/code4.png">  
 <img src="screenshot/code4lanjutan.png">  
@@ -75,7 +75,7 @@ Halaman ini mengambil `id` dari URL (`ubah.php?id=...`), mengambil datanya denga
 <img src="screenshot/hasil4lanjutan.png">  
 
 ### 11. Menghapus Data / Delete (`hapus.php`)
-Halaman ini mengambil `id` dari URL lalu menjalankan `DELETE FROM data_barang WHERE id_barang`, kemudian kembali ke `index.php`. Pada pengujian, barang **Laptop Gaming** dihapus lewat tautan **Hapus** dan tidak lagi muncul di tabel.
+Halaman ini mengambil `id` dari URL lalu menjalankan `DELETE FROM data_barang WHERE id_barang`, kemudian kembali ke `index.php`. Pada pengujian, barang **Iphone 18 promax 2TB** dihapus lewat tautan **Hapus** dan tidak lagi muncul di tabel.
 
 <img src="screenshot/code5.png">  
 <img src="screenshot/hasil5.png">  
